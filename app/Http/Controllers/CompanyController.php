@@ -117,6 +117,7 @@ class CompanyController extends BaseController
         }
 
         $data = $this->companyService->createCompany($request->all());
+        return response([$data]);
         if (!$data) {
             return response([
                 'message' => $data,

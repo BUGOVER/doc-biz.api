@@ -139,7 +139,8 @@ class CompanyService extends BaseService
             return null;
         }
 
-        $savedUserData = $this->userRepository->updateBased(['company_id' => $create], ['user_id' => $userId]) ?? false;
+        $savedUserData = $this->userRepository->updateBased(['company_id' => $create['company_id']],
+                ['user_id' => $userId]) ?? false;
 
         if (!$savedUserData) {
             $this->baseRepository->rollbackTransaction();

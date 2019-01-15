@@ -28,7 +28,7 @@ function get_request_attribute(string $key = '')
         return $params;
     }
 
-    if (strpos($key, '.') !== false) {
+    if (false !== strpos($key, '.')) {
         return \Illuminate\Support\Arr::get($params, $key, null);
     }
 
