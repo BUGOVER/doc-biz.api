@@ -1,0 +1,16 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vscode
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+.env
+/resources/src/app/panel/leader/settings/user-settings/helpers.data.ts
+/task
+/public/vendor/
+/app/Providers/TelescopeServiceProvider.php
